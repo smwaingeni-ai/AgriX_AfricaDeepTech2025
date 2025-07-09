@@ -1,0 +1,50 @@
+name: agrix_mobile
+description: A mobile frontend for AgriX - Africa Deep Tech Challenge
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  image_picker: ^1.0.4
+  http: ^1.1.0
+  tflite: ^1.1.2
+  path_provider: ^2.1.2
+  share_plus: ^11.0.0
+  qr_flutter: ^4.0.0
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2
+  local_auth: ^2.1.6
+  shared_preferences: ^2.2.2
+  geolocator: ^14.0.2
+  geocoding: ^4.0.0
+  url_launcher: ^6.2.1
+  provider: ^6.1.1
+  file_picker: ^6.1.1
+  uuid: ^4.0.0
+  json_annotation: ^4.8.1
+  encrypt: ^5.0.1
+
+  # ✅ Firebase dependencies (fully aligned)
+  firebase_core: ^2.32.0
+  cloud_firestore: ^4.15.4
+  firebase_auth: ^4.16.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.7
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/tflite/crop_disease_model.tflite
+    - assets/tflite/labels.txt
+    - assets/images/
